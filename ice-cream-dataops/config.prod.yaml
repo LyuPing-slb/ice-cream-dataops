@@ -1,7 +1,7 @@
 environment:
-  name: test
-  project: cdf-bootcamp-54-test
-  validation-type: test
+  name: prod
+  project: cdf-bootcamp-54-prod
+  validation-type: prod
   selected:
     - modules/bootcamp/data_foundation
     - modules/bootcamp/ice_cream_api
@@ -14,7 +14,7 @@ variables:
       icapi_ds_external_id: ds_icapi
       icapi_space_name: icapi_dm_space
       ice_cream_api:
-        icapi_extractors_source_id: 38a904ed-c2c5-468e-a5b1-11c6a03def24
+        icapi_extractors_source_id: d2383e1e-d3de-4178-8ccd-634cbf56880b
         tokenUri: ${IDP_TOKEN_URL}
         cdfProjectName: ${CDF_PROJECT}
         scopes: ${IDP_SCOPES}
@@ -25,11 +25,11 @@ variables:
 
       use_cases:
         oee:
-          data_pipeline_oee_source_id: 8b5ff981-ea57-4fdf-a635-bd7ac8631590
+          data_pipeline_oee_source_id: a0d5af94-0953-400b-96a0-85d01b2a3215
           uc_oee_ds_external_id: ds_uc_oee
           oee_space_name: oee_ts_space
           data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID}
           data_pipeline_oee_client_secret: ${DATA_PIPELINE_OEE_CLIENT_SECRET}
 
       data_foundation:
-        data_developer_source_id: a4659f09-36ae-4cb2-b17d-18bf2fd8ea50
+        data_developer_source_id: 346c652a-e51d-400d-8288-2031510e173d
